@@ -23,7 +23,7 @@ with open('src/Dockerfile', 'w') as f:
 RUN apt-get update && apt-get upgrade -y
 
 COPY src/missing-packages.txt /tmp/missing-packages.txt
-RUN DEBIAN_FRONTEND=noninteractive xargs -a /tmp/missing-packages.txt apt-get install -y
+RUN DEBIAN_FRONTEND=noninteractive xargs -a /tmp/missing-packages.txt apt-get install -y --no-install-recommends
 
 RUN useradd -m runner && echo "runner ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/runner
 
