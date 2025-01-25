@@ -4,11 +4,18 @@ import json
 with open('installscript.toml', 'rb') as f:
     config = tomllib.load(f)
 
+def replace_ML(s: str) -> str:
+    # ML 2 GB を入れる
+    s = s.replace('{memory:b}', str(1 << 31))
+    s = s.replace('{memory:kb}', str(1 << 21))
+    s = s.replace('{memory:mb}', str(1 << 11))
+    return s
+
 with open('src/install.sh', 'w') as f:
-    f.write(config['install'])
+    f.write(replace_ML(config['install']))
 
 with open('src/compile.sh', 'w') as f:
-    f.write(config['compile'])
+    f.write(replace_ML(config['compile']))
 
 with open('src/Dockerfile', 'w') as f:
     f.write(f'''FROM ubuntu:24.04 AS base
