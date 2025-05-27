@@ -429,7 +429,7 @@ library.semigroupoids = { license = [
     { name = 'BSD-2-Clause', url = 'https://hackage.haskell.org/package/semigroupoids/src/LICENSE' },
 ], version = '6.0.1' }
 library.semigroups = { license = [
-    { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/semigroups/src/LICENSE' },
+    { name = 'BSD-2-Clause', url = 'https://hackage.haskell.org/package/semigroups/src/LICENSE' },
 ], indirect = true, version = '0.20' }
 library.split = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/split/src/LICENSE' },
@@ -516,7 +516,7 @@ library.vector-algorithms = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-algorithms/src/LICENSE' },
 ], version = '0.9.1.0' }
 library.vector-split = { license = [
-    { name = 'MIT', url = 'https://hackage.haskell.org/package/vector-split/src/LICENSE' },
+    { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-split/src/LICENSE' },
 ], version = '1.0.0.3' }
 library.vector-stream = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-stream/src/LICENSE' },
