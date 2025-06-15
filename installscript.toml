@@ -157,7 +157,7 @@ library.StateVar = { license = [
 ], indirect = true, version = '1.2.2' }
 library.ac-library-hs = { license = [
     { name = 'CC0-1.0', url = 'https://hackage.haskell.org/package/ac-library-hs/src/LICENSE' },
-], version = '1.5.0.0' }
+], version = '1.5.1.0' }
 library.adjunctions = { license = [
     { name = 'BSD-2-Clause', url = 'https://hackage.haskell.org/package/adjunctions/src/LICENSE' },
 ], version = '4.4.3' }
@@ -331,7 +331,7 @@ library.logict = { license = [
 ], indirect = true, version = '0.8.2.0' }
 library.massiv = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/massiv/src/LICENSE' },
-], version = '1.0.4.1' }
+], version = '1.0.5.0' }
 library.math-functions = { license = [
     { name = 'BSD-2-Clause', url = 'https://hackage.haskell.org/package/math-functions/src/LICENSE' },
 ], indirect = true, version = '0.3.4.4' }
@@ -340,7 +340,7 @@ library.megaparsec = { license = [
 ], version = '9.7.0' }
 library.mmorph = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/mmorph/src/LICENSE' },
-], indirect = true, version = '1.2.0' }
+], indirect = true, version = '1.2.1' }
 library.monad-control = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/monad-control/src/LICENSE' },
 ], indirect = true, version = '1.0.3.1' }
@@ -436,7 +436,7 @@ library.split = { license = [
 ], version = '0.2.5' }
 library.splitmix = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/splitmix/src/LICENSE' },
-], indirect = true, version = '0.1.1' }
+], indirect = true, version = '0.1.2' }
 library.stm = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/stm/src/LICENSE' },
 ], version = '2.5.3.1' }
@@ -516,7 +516,7 @@ library.vector-algorithms = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-algorithms/src/LICENSE' },
 ], version = '0.9.1.0' }
 library.vector-split = { license = [
-    { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-split/src/LICENSE' },
+    { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-split-1.0.0.3/src/LICENSE' },
 ], version = '1.0.0.3' }
 library.vector-stream = { license = [
     { name = 'BSD-3-Clause', url = 'https://hackage.haskell.org/package/vector-stream/src/LICENSE' },
@@ -612,7 +612,7 @@ executable main
                   Cabal ^>=3.14.2.0,
                   Cabal-syntax ^>=3.14.2.0,
                   QuickCheck ^>=2.15.0.1,
-                  ac-library-hs ^>=1.5.0.0,
+                  ac-library-hs ^>=1.5.1.0,
                   adjunctions ^>=4.4.3,
                   array ==0.5.8.0,
                   attoparsec ^>=0.14.4,
@@ -651,7 +651,7 @@ executable main
                   lens ^>=5.3.4,
                   linear-base ^>=0.5.0,
                   list-t ^>=1.0.5.7,
-                  massiv ^>=1.0.4.1,
+                  massiv ^>=1.0.5.0,
                   megaparsec ^>=9.7.0,
                   monad-memo ^>=0.5.4,
                   mono-traversable ^>=1.0.21.0,
@@ -728,7 +728,7 @@ constraints: any.Cabal ==3.14.2.0,
              any.QuickCheck ==2.15.0.1,
              QuickCheck -old-random +templatehaskell,
              any.StateVar ==1.2.2,
-             any.ac-library-hs ==1.5.0.0,
+             any.ac-library-hs ==1.5.1.0,
              any.adjunctions ==4.4.3,
              any.alex ==3.5.3.0,
              any.ansi-terminal ==1.1.2,
@@ -807,13 +807,13 @@ constraints: any.Cabal ==3.14.2.0,
              any.linear-generics ==0.2.3,
              any.list-t ==1.0.5.7,
              any.logict ==0.8.2.0,
-             any.massiv ==1.0.4.1,
+             any.massiv ==1.0.5.0,
              massiv -unsafe-checks,
              any.math-functions ==0.3.4.4,
              math-functions +system-erf +system-expm1,
              any.megaparsec ==9.7.0,
              megaparsec -dev,
-             any.mmorph ==1.2.0,
+             any.mmorph ==1.2.1,
              any.monad-control ==1.0.3.1,
              any.monad-memo ==0.5.4,
              any.mono-traversable ==1.0.21.0,
@@ -821,7 +821,7 @@ constraints: any.Cabal ==3.14.2.0,
              any.mutable-containers ==0.3.4.1,
              any.mwc-random ==0.15.2.0,
              mwc-random -benchpapi,
-             any.optparse-applicative ==0.18.1.0,
+             any.optparse-applicative ==0.19.0.0,
              optparse-applicative +process,
              any.os-string ==2.0.7,
              any.parallel ==3.2.2.0,
@@ -858,7 +858,7 @@ constraints: any.Cabal ==3.14.2.0,
              any.semigroups ==0.20,
              semigroups +binary +bytestring -bytestring-builder +containers +deepseq +hashable +tagged +template-haskell +text +transformers +unordered-containers,
              any.split ==0.2.5,
-             any.splitmix ==0.1.1,
+             any.splitmix ==0.1.2,
              splitmix -optimised-mixer,
              any.stm ==2.5.3.1,
              any.storable-complex ==0.2.3.0,
@@ -907,7 +907,7 @@ constraints: any.Cabal ==3.14.2.0,
              any.wide-word ==0.1.7.0,
              any.witherable ==0.5,
              any.xhtml ==3000.2.2.1
-index-state: hackage.haskell.org 2025-05-24T14:41:27Z
+index-state: hackage.haskell.org 2025-06-15T04:16:50Z
 
 CABAL_PROJECT_FREEZE_EOF
 
