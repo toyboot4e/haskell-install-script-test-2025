@@ -246,12 +246,13 @@ import qualified Distribution.Utils.Structured
 import qualified Distribution.Version
 import qualified Language.Haskell.Extension
 
--- QuickCheck-2.15.0.1
+-- QuickCheck-2.16.0.0
 import qualified Test.QuickCheck
 import qualified Test.QuickCheck.Arbitrary
 import qualified Test.QuickCheck.Gen
 import qualified Test.QuickCheck.Gen.Unsafe
 import qualified Test.QuickCheck.Monadic
+import qualified Test.QuickCheck.Monoids
 import qualified Test.QuickCheck.Modifiers
 import qualified Test.QuickCheck.Property
 import qualified Test.QuickCheck.Test
@@ -264,7 +265,7 @@ import qualified Test.QuickCheck.Features
 import qualified Test.QuickCheck.Function
 import qualified Test.QuickCheck.All
 
--- ac-library-hs-1.5.1.0
+-- ac-library-hs-1.5.2.0
 import qualified AtCoder.Convolution
 import qualified AtCoder.Dsu
 import qualified AtCoder.Extra.Bisect
@@ -312,6 +313,7 @@ import qualified AtCoder.Extra.Tree.Hld
 import qualified AtCoder.Extra.Tree.Lct
 import qualified AtCoder.Extra.Tree.TreeMonoid
 import qualified AtCoder.Extra.Vector
+import qualified AtCoder.Extra.Vector.Prim
 import qualified AtCoder.Extra.WaveletMatrix
 import qualified AtCoder.Extra.WaveletMatrix.BitVector
 import qualified AtCoder.Extra.WaveletMatrix.Raw
@@ -945,7 +947,7 @@ import qualified Math.NumberTheory.Powers.Integer
 import qualified Math.NumberTheory.Powers.Natural
 import qualified GHC.Integer.Logarithms.Compat
 
--- kan-extensions-5.2.6
+-- kan-extensions-5.2.7
 import qualified Control.Comonad.Density
 import qualified Control.Monad.Co
 import qualified Control.Monad.Codensity
@@ -960,7 +962,7 @@ import qualified Data.Functor.Kan.Ran
 import qualified Data.Functor.Yoneda
 import qualified Data.Functor.Coyoneda
 
--- lens-5.3.4
+-- lens-5.3.5
 import qualified Control.Lens
 import qualified Control.Exception.Lens
 import qualified Control.Lens.At
@@ -1305,7 +1307,7 @@ import qualified System.Process.CommunicationHandle
 import qualified System.Process.CommunicationHandle.Internal
 import qualified System.Process.Internals
 
--- profunctors-5.6.2
+-- profunctors-5.6.3
 import qualified Data.Profunctor
 import qualified Data.Profunctor.Adjunction
 import qualified Data.Profunctor.Cayley
@@ -1697,7 +1699,7 @@ import qualified Data.Vector.Algorithms.Heap
 import qualified Data.Vector.Algorithms.AmericanFlag
 import qualified Data.Vector.Algorithms.Tim
 
--- vector-split-1.0.0.3
+-- vector-split-1.0.0.4
 import qualified Data.Vector.Split
 import qualified Data.Vector.Split.Internal
 
@@ -1707,7 +1709,7 @@ import qualified Data.Stream.Monadic
 -- vector-th-unbox-0.2.2
 import qualified Data.Vector.Unboxed.Deriving
 
--- wide-word-0.1.7.0
+-- wide-word-0.1.7.1
 import qualified Data.WideWord
 import qualified Data.WideWord.Int128
 import qualified Data.WideWord.Word64
@@ -1733,3 +1735,4 @@ import qualified GHC.Lexeme
 
 main :: Prelude.IO ()
 main = Prelude.return ()
+
